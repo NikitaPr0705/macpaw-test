@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b77b212fca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+
+<body class="body page-body">
+    <h1 class="visually-hidden">Jokes</h1>
+    <section class="jokes-main-section jokes">
+        <div class="jokes-main-section__wrapper">
+            <div class="jokes__flex-between">
+                <span class="jokes__span-top">MSI 2020</span>
+                <span class="jokes__span-top-fav "><i class="burger-icon"></i>Favourite</span>
+            </div>
+            <div class="jokes__search-inner-wrapper">
+                <span class="jokes__greetings jokes__span-text">Hey!</span>
+                <br>
+                <span class="jokes__try jokes__span-text">Let’s try to find a joke for you:</span>
+                <form class="jokes__form">
+                    <label class="jokes__label jokes__label-random">
+                        <input class="visually-hidden jokes__outer-radio jokes__radio-random" type="radio" id="random"
+                            name="radio" value="random" checked="true">
+                        Random
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="jokes__label jokes__label-categories">
+                        <input class="visually-hidden jokes__outer-radio jokes__radio-categories" type="radio"
+                            id="categories" name="radio" value="categories">
+                        From categories
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="jokes__radio-wrapper">
+                        <input class="jokes__radio jokes__inner-categories-radio jokes__inner-categories-radio--animal"
+                            name="inner-radio" type="radio" id="animal" checked="true">
+                        <label class="jokes__radio-label" for="animal">Animal</label>
+                        <input class="jokes__radio jokes__inner-categories-radio jokes__inner-categories-radio--career"
+                            name="inner-radio" type="radio" id="career">
+                        <label class="jokes__radio-label" for="career">Career</label>
+                        <input
+                            class="jokes__radio jokes__inner-categories-radio jokes__inner-categories-radio--celebrity"
+                            name="inner-radio" type="radio" id="celebrity">
+                        <label class="jokes__radio-label" for="celebrity">Celebrity</label>
+                        <input class="jokes__radio jokes__inner-categories-radio jokes__inner-categories-radio--dev"
+                            name="inner-radio" type="radio" id="dev">
+                        <label class="jokes__radio-label" for="dev">Dev</label>
+
+                    </div>
+
+                    <label class="jokes__label jokes__label-search">
+                        <input class="visually-hidden jokes__outer-radio jokes__radio-search" type="radio" id="search"
+                            name="radio" value="search">
+                        Search
+                        <span class="checkmark"></span>
+                    </label>
+                    <input type="search" class="jokes__input-search" placeholder="Free text search...">
+                    <input class="jokes__get-button" type="button" value="Get a joke">
+                </form>
+            </div>
+            <ul class="jokes__founded-joke-list">
+
+            </ul>
+        </div>
+    </section>
+    <section class="jokes__favourite">
+        <h2 class="jokes__favourite-title">Favourite</h2>
+        <ul class="jokes__favourite-list">
+
+
+        </ul>
+    </section>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
